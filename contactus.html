@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Easy</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("pexels-alejandro-barron-21404-96715.jpg");
+            background-size: contain;  /* Ensures the full image is visible */
+    background-position: top center; /* Aligns the image to the top */
+    background-repeat: no-repeat; /* Prevents repetition */
+    background-attachment: fixed;
+    color: white;
+    background-size: 100% auto;
+            color: #333;
+        }
+        body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black transparent overlay */
+  z-index: -1; /* Background ke peeche rakhne ke liye */
+}
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255 , 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #2e7d32;
+            font-size: 2.5em;
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .contact-info p strong {
+            color: #2e7d32;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.5em;
+            transition: transform 0.3s, background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 10%;
+        }
+        .social-media a:hover {
+            transform: scale(1.1);
+        }
+        .social-media a i {
+            font-size: 2em;
+        }
+        .social-media .facebook {
+            background-color: #3b5998;
+        }
+        .social-media .facebook:hover {
+            background-color: #324a87;
+        }
+        .social-media .twitter {
+            background-color: #1da1f2;
+        }
+        .social-media .twitter:hover {
+            background-color: #1887c8;
+        }
+        .social-media .instagram {
+            background-color: #e1306c;
+        }
+        .social-media .instagram:hover {
+            background-color: #c7245f;
+        }
+        .social-media .linkedin {
+            background-color: #0077b5;
+        }
+        .social-media .linkedin:hover {
+            background-color: #005f8a;
+        }
+        .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* Transparent black background */
+}
+
+.navbar-left image {
+  position:absolute ;
+  /* Green color */
+}
+
+.navbar-right ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.navbar-right ul li {
+  margin: 0 15px;
+}
+
+.navbar-right ul li a {
+  text-decoration: none;
+  color:white; /* Green color */
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  
+  
+}
+
+.navbar-right ul li a:hover {
+  color: orange;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 5px 5px 5px;
+  transition: ease-in 0.2s; /* Yellow on hover */
+}
+        
+    </style>
+    <!-- Link to font-awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="Farm-Easy-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="rent.html">Services</a></li>
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <p><strong>Address:</strong> 123 Farm Lane, Modinagar, UP, India</p>
+            <p><strong>Contact Number:</strong> +91 98765 43210</p>
+            <p><strong>Contact Number:</strong> +91 91930 44556</p>
+            <p><strong>Email:</strong> contact@farmequipmentrental.com</p>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com/farmequipmentrental" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/farmequipmentrental" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/farmequipmentrental" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/company/farmequipmentrental" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</body>
+</html>

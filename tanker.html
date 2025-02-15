@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers Job Portal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-top: 10px; /* Adjust this value to shift the content up */
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #333;
+            background-image: url('img.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            background-size: contain;  /* Ensures the full image is visible */
+            background-position: top center; /* Aligns the image to the top */
+            background-repeat: no-repeat; /* Prevents repetition */
+            background-attachment: fixed;
+            background-size: 100% auto;
+        }
+       
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px; /* Adjust this value to shift the content up */
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+        }
+        .navbar-left img {
+            position: absolute;
+        }
+        .navbar-right ul {
+            display: flex;
+            list-style-type: none;
+        }
+        .navbar-right ul li {
+            margin: 0 15px;
+        }
+        .navbar-right ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        .navbar-right ul li a:hover {
+            color: orange;
+            background-color: white;
+            border-radius: 20px;
+            padding: 5px;
+            transition: ease-in 0.2s;
+        }
+        main {
+            padding: 10px 20px; /* Adjust this value to shift the content up */
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .background-section {
+            padding: 40px; /* Adjust this value to shift the content up */
+            color: white;
+            text-align: center;
+            font-size: x-large;
+        }
+        .profiles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .profile {
+            background-color: #ffffff90;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.2s;
+        }
+        .profile:hover {
+            transform: scale(1.05);
+        }
+        .profile img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            margin-bottom: 15px;
+        }
+        .profile h2 {
+            margin-top: 10px;
+            color: #00796b;
+        }
+        .profile h3 {
+            color: #004d40;
+        }
+        .profile p {
+            color: #666666;
+        }
+        .profile .price {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+        .color {
+            color: orange;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 97%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="Farm-Easy-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about1.html">About us</a></li>
+                    <li><a href="rent.html">Services</a></li>
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="background-section">
+            <h2>Welcome to the <div class="color">Water Tank Supplier Portal</div></h2>
+            <p>Best services under low prices provided by our website.</p>
+        </section>
+        <section class="profiles">
+            <div class="profile">
+                <img src="tank1.jpg" alt="Cultivator Photo">
+                <h2>WATER TANK TYPE 1</h2>
+                <h3>VOLUME: 500 LITRES</h3>
+                <h3>PRCIE: ₹800</h3>
+            </div>
+            <div class="profile">
+                <img src="tank2.jpg" alt="Cultivator Photo">
+                <h2>WATER TANK TYPE 2</h2>
+                <h3>VOLUME: 1000 LITRES</h3>
+                <h3>PRCIE: ₹1400</h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Farmers Job Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

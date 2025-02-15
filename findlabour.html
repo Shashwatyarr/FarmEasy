@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laborer Profiles</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url("pexels-alejandro-barron-21404-96715.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: contain;  /* Ensures the full image is visible */
+            background-position: top center; /* Aligns the image to the top */
+            background-repeat: no-repeat; /* Prevents repetition */
+            background-attachment: fixed;
+            background-size: 100% auto;
+           
+        }
+        body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black transparent overlay */
+  z-index: -1; /* Background ke peeche rakhne ke liye */
+}
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+           /* Transparent black background */
+        }
+        .navbar-left image {
+            position:absolute ;
+            /* Green color */
+        }
+        .navbar-right ul {
+            display: flex;
+            list-style-type: none;
+        }
+        .navbar-right ul li {
+            margin: 0 15px;
+        }
+        .navbar-right ul li a {
+            text-decoration: none;
+            color:white; /* Green color */
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        .navbar-right ul li a:hover {
+            color: orange;
+            background-color: white;
+            border-radius: 20px;
+            padding: 5px 5px 5px 5px;
+            transition: ease-in 0.2s; /* Yellow on hover */
+        }
+        .profiles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .profile {
+            background-color: whitesmoke;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.2s;
+        }
+        .profile:hover {
+            transform: scale(1.05);
+        }
+        .profile img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            margin-bottom: 15px;
+        }
+        .profile h2 {
+            margin-top: 10px;
+            color: #00796b;
+        }
+        .profile h3 {
+            color: #004d40;
+        }
+        .profile p {
+            color: #666666;
+        }
+        .profile .price {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+              <image src="Farm-Easy-removebg-preview.png"></image>
+            </div>
+            <div class="navbar-right">
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about1.html">About</a></li>
+                <li><a href="sevices.html">Services</a></li>
+                <li><a href="index.html">Login</a></li>
+                <li><a href="contact.html">Contact-Us</a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <h1>HIRE LABOURES AS PER THEIR EXPERTISE</h1>
+    <div class="profiles">
+        <div class="profile">
+            <img src="WhatsApp Image 2025-02-14 at 19.13.58_74c6aa1c.jpg" alt="Profile Photo">
+            <h2>Rampal Yadav</h2>
+            <h3>Construction Worker</h3>
+            <p>John has over 10 years of experience in the construction industry. He specializes in residential building projects.</p>
+            <p class="price">₹500/hour</p>
+        </div>
+        <div class="profile">
+            <img src="WhatsApp Image 2025-02-14 at 19.13.36_8182eb32.jpg" alt="Profile Photo">
+            <h2>Rajbir tomar</h2>
+            <h3>Electrician</h3>
+            <p>Jane is a certified electrician with expertise in both residential and commercial electrical systems.</p>
+            <p class="price">₹600/hour</p>
+        </div>
+        <div class="profile">
+            <img src="WhatsApp Image 2025-02-14 at 19.13.54_e3ca8bc2.jpg" alt="Profile Photo">
+            <h2>Jitendra kumar</h2>
+            <h3>Plumber</h3>
+            <p>Rajesh is known for his excellent plumbing skills and his ability to solve complex plumbing problems efficiently.</p>
+            <p class="price">₹450/hour</p>
+        </div>
+        <div class="profile">
+            <img src="WhatsApp Image 2025-02-14 at 19.13.41_64f50d83.jpg" alt="Profile Photo">
+            <h2>Mansi kumari</h2>
+            <h3>Carpenter</h3>
+            <p>Maria has a keen eye for detail and excels in custom carpentry and furniture making.</p>
+            <p class="price">₹550/hour</p>
+        </div>
+        <div class="profile">
+            <img src="WhatsApp Image 2025-02-14 at 19.13.31_d8cf4b43.jpg" alt="Profile Photo">
+            <h2>Ahmed Khan</h3>
+            <h3>Welder</h3>
+            <p>Ahmed is skilled in various welding techniques and has worked on numerous large-scale projects.</p>
+            <p class="price">₹500/hour</p>
+        </div>
+        <div class="profile">
+            <img src="WhatsApp Image 2025-02-14 at 19.13.48_047f7f6b.jpg" alt="Profile Photo">
+            <h2>Kalu yadav</h2>
+            <h3>Painter</h3>
+            <p>Li is an experienced painter with a talent for both interior and exterior painting projects.</p>
+            <p class="price">₹400/hour</p>
+        </div>
+        <div class="profile">
+            <img src="WhatsApp Image 2025-02-14 at 19.13.58_ca9c1a37.jpg" alt="Profile Photo">
+            <h2>Amar bhadur</h2>
+            <h3>Roofer</h3>
+            <p>Antonio has extensive experience in roofing and is known for his attention to detail and quality workmanship.</p>
+            <p class="price">₹550/hour</p>
+        </div>
+        <div class="profile">
+            <img src="WhatsApp Image 2025-02-14 at 19.13.41_64f50d83.jpg" alt="Profile Photo">
+            <h2>Nirmal singh</h2>
+            <h3>Gardener</h3>
+            <p>Mei has a passion for gardening and landscaping, and she transforms outdoor spaces into beautiful gardens.</p>
+            <p class="price">₹450/hour</p>
+        </div>
+    </div>
+</body>
+</html>

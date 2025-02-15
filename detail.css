@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    
+    color: black;
+    background-image: url("pexels-alejandro-barron-21404-96715.jpg");
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.header {
+    text-align: center;
+    margin: 20px 0;
+}
+.product-info {
+    display: flex;
+    justify-content: space-between;
+}
+.product-info img {
+    width: 300px;
+}
+.product-info div {
+    width: 60%;
+}
+.calendar {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.calendar th, .calendar td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.calendar th {
+    background-color: green;
+    color: white;
+}
+.button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: darkorange;
+}

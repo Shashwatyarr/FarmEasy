@@ -1,0 +1,267 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("pexels-alejandro-barron-21404-96715.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    
+
+    
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  }
+  
+  .navbar-left image {
+    position:absolute ;
+    /* Green color */
+  }
+  
+  .navbar-right ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navbar-right ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar-right ul li a {
+    text-decoration: none;
+    color:white;/* Green color */
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    
+    
+  }
+  
+  .navbar-right ul li a:hover {
+    color: orange;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    transition: ease-in 0.2s; /* Yellow on hover */
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  }
+  .hero h1{
+    
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+  }
+  
+  .hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    
+  }
+  .text{
+    color: #4CAF50;
+  }
+  .hero-content p .agri{
+    color: orange;
+    font-weight: 800;
+
+  }
+  .hero-content .jo{
+    color: #4CAF50;
+    font-size: 800;
+    font-weight: 800;
+  }
+  .butn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adds some space above the button */
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically by default */
+    align-items: center;    /* Center-align content horizontally */
+   /* Distribute items */
+    margin-bottom: 20px;
+    /* Add space between product items */
+}
+
+.butn {
+  margin-left: 60px;
+    display: flex;
+    justify-content: space-between; /* Distribute buttons horizontally */
+    align-items: center;
+    width: 100%;  /* Make the container take full width */
+    margin-top: 20px;  /* Space above the buttons */
+}
+
+button {
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    height: 60px;
+    border: none;
+    width: 150px;
+    border-radius: 20px;
+    box-shadow: 10px 30px 50px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin: 5px;  /* Adds space between buttons */
+    transition: ease-in 0.2s;
+}
+
+button:hover {
+    scale: 1.01;
+    margin: -10px;  /* Ensure symmetrical margin on hover */
+}
+
+button:active {
+    scale: 0.9;
+}
+
+/* Styling for links inside buttons */
+.butn button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 60px; /* Centers text vertically */
+}
+
+.butn a:hover {
+    color: white;
+    transition: ease-in 0.2s;
+}
+
+
+  
+  /* Products Section */
+  .products {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    text-align: center;
+  }
+  
+  .products h2 {
+    font-size: 2.5rem;
+    color: white; /* Yellow color */
+    margin-bottom: 30px;
+    
+  }
+  
+  .product-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .product-item {
+    background-color: #4CAF50;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .product-item h3 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    color:rgb(255, 255, 255);
+  }
+  
+  .product-item p {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .product-icon {
+    width: 50px;
+    height: 100px;
+    
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  @keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }}
+    @keyframes slideLeft {
+      0% {
+          transform: translateX(100px);
+          opacity: 0;
+      }
+  
+      100% {
+          transform: translateX(0px);
+          opacity: 1;
+      }
+  }
+}
